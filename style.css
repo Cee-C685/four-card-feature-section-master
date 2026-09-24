@@ -40,24 +40,29 @@ body {
 }
 
 .box {
-  max-width: 100%;
+  max-width: 300px;
   padding: 16px;
   background-color: #ffffff;
-  font-weight: bold;
-  text-align: center;
-  width: 30%;
-  height: 200px;
+  width: 90%;
   margin: 0 auto;
+  padding: 30px;
   margin-bottom: 2em;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
   box-shadow: 3px 3px 20px rgba(76, 78, 97, 0.2);
 }
 
-.box img {
-  
+p {
+  font-weight: 300;
 }
+
 .seen {
   border-top: 5px solid #45d3d3;
+}
+
+.image {
+  align-self: flex-end;
 }
 
 .together {
@@ -82,4 +87,10 @@ p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 400px) {
+  #wrapper {
+    
+  }
 }
