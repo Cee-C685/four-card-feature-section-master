@@ -91,5 +91,32 @@ p {
 
 @media (min-width: 400px) {
   #wrapper {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    /* gap: 0.8em; */
+    grid-template-areas:
+      "supervisor team calculator"
+      "supervisor karma calculator";
+    place-items: center;
+  }
+
+  .seen {
+    grid-area: supervisor;
+  }
+
+  .together {
+    grid-area: team;
+  }
+
+  .idea {
+    grid-area: karma;
+  }
+
+  .solution {
+    grid-area: calculator;
+  }
+
+  .box {
+    max-width: 500px;
   }
 }
